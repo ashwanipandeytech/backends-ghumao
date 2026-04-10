@@ -37,7 +37,7 @@ class EnquieryController extends BaseController
      * @return \Illuminate\Http\Response
      */
 
-    public function add1111(Request $request)
+    public function add111(Request $request)
     {
         $input = $request->all();
         $validator = Validator::make($input, [
