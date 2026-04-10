@@ -1,0 +1,30 @@
+name: Deploy Backend Live
+
+on:
+  push:
+    branches:
+      - live
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Deploy to Hostinger Live
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER_LIVE }}
+          username: ${{ secrets.FTP_USERNAME_LIVE }}
+          password: ${{ secrets.FTP_PASSWORD_LIVE }}
+          port: 21
+          protocol: ftp
+          local-dir: ./
+          server-dir: /domains/ghumao.in/public_html/api/
+          exclude: |
+            **/.git*
+            **/node_modules/**
+            .env
+            package/
