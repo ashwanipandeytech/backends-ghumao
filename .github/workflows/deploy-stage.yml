@@ -22,7 +22,7 @@ jobs:
           port: 21
           protocol: ftp
           local-dir: ./
-          server-dir: /domains/demohandler.in/public_html/api/
+          server-dir: /domains/demohandler.in/public_html/apighumao/
           dangerous-clean-remote: false
           exclude: |
             **/.git*
