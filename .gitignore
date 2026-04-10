@@ -29,6 +29,7 @@
 
 # Custom image upload folder at root
 /images/
+/public/images/
 
 # Stray files at root
 default_renamed.php

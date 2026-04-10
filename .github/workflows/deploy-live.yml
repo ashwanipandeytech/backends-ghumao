@@ -25,14 +25,16 @@ jobs:
           server-dir: /domains/ghumao.in/public_html/api/
           dangerous-clean-remote: false
           exclude: |
-            **/.git*
-            **/node_modules/**
+            .git/**
+            .github/**
+            public/images/**
+            node_modules/**
             .env
-            **/.htaccess
             /images/**
-            /storage/*.key
-            /storage/app/**
-            /storage/framework/**
-            /storage/logs/**
-            /bootstrap/cache/**
-            /vendor/**
+            storage/*.key
+            storage/app/**
+            storage/framework/**
+            storage/logs/**
+            bootstrap/cache/**
+            vendor/**
+
