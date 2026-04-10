@@ -32,3 +32,7 @@
 
 # Stray files at root
 default_renamed.php
+
+deploy_key
+deploy_key.pub
+
