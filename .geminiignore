@@ -1,0 +1,11 @@
+.git/
+node_modules/
+vendor/
+/images/
+/public/images/
+/storage/app/
+/storage/framework/
+/storage/logs/
+/bootstrap/cache/
+.env
+.DS_Store
