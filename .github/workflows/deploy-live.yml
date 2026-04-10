@@ -23,9 +23,16 @@ jobs:
           protocol: ftp
           local-dir: ./
           server-dir: /domains/ghumao.in/public_html/api/
+          dangerous-clean-remote: false
           exclude: |
             **/.git*
             **/node_modules/**
             .env
             **/.htaccess
-            package/
+            /images/**
+            /storage/*.key
+            /storage/app/**
+            /storage/framework/**
+            /storage/logs/**
+            /bootstrap/cache/**
+            /vendor/**

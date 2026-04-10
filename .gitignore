@@ -1,3 +1,34 @@
-node_modules/
+/node_modules
+/vendor
+/public/hot
+/public/storage
+/storage/*.key
+/storage/app/*
+!/storage/app/.gitignore
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
 .env
+.env.backup
+.env.production
+.phpunit.result.cache
+
+/.idea
+/.vscode
 .DS_Store
+
+# Custom image upload folder at root
+/images/
+
+# Stray files at root
+default_renamed.php

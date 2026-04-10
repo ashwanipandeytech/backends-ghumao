@@ -23,8 +23,16 @@ jobs:
           protocol: ftp
           local-dir: ./
           server-dir: /domains/demohandler.in/public_html/api/
+          dangerous-clean-remote: false
           exclude: |
             **/.git*
             **/node_modules/**
             .env
             **/.htaccess
+            /images/**
+            /storage/*.key
+            /storage/app/**
+            /storage/framework/**
+            /storage/logs/**
+            /bootstrap/cache/**
+            /vendor/**
