@@ -27,4 +27,5 @@ jobs:
             **/.git*
             **/node_modules/**
             .env
+            **/.htaccess
             package/
